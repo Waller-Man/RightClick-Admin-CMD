@@ -28,5 +28,5 @@ Use with caution. Always back up your registry before applying any custom modifi
 
 ## 🙌 Author
 
-Created by [YourName]  
+Created by [WallMan]  
 Inspired by system administration needs and convenience.
