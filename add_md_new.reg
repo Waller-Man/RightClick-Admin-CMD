@@ -7,3 +7,6 @@ Windows Registry Editor Version 5.00
 
 [HKEY_CURRENT_USER\Software\Classes\.md\ShellNew]
 "NullFile"=""
+
+[HKEY_CURRENT_USER\Software\Classes\MarkdownFile]
+@="Markdown 文件"
