@@ -1,12 +1,23 @@
 Windows Registry Editor Version 5.00
 
+; 先删除旧的 MarkdownFile，清掉乱码显示名
+[-HKEY_CURRENT_USER\Software\Classes\MarkdownFile]
+
+; 重新注册 .md 文件类型
 [HKEY_CURRENT_USER\Software\Classes\.md]
 @="MarkdownFile"
 "Content Type"="text/markdown"
 "PerceivedType"="text"
 
+; 添加到 右键 → 新建 菜单
 [HKEY_CURRENT_USER\Software\Classes\.md\ShellNew]
 "NullFile"=""
 
+; 重新定义显示名称，英文最稳，不会乱码
 [HKEY_CURRENT_USER\Software\Classes\MarkdownFile]
-@="Markdown 文件"
+@="Markdown File"
+"FriendlyTypeName"="Markdown File"
+
+; 设置图标
+[HKEY_CURRENT_USER\Software\Classes\MarkdownFile\DefaultIcon]
+@="C:\\Windows\\System32\\imageres.dll,-102"
